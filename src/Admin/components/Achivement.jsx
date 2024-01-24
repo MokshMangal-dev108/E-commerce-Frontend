@@ -1,0 +1,39 @@
+import {styled,Button, Card, CardContent, Typography } from '@mui/material'
+import React from 'react'
+
+const TrignleImg = styled("img")({
+    right:0,
+    bottom:0,
+    height:170,
+    position:"absolute"
+})
+
+const TrophyImg = styled("img")({
+    right:36,
+    bottom:20,
+    height:98,
+    position:"absolute"
+})
+
+const Achivement = () => {
+  return (
+    <Card className='space-y-5' sx={{position:"relative", bgcolor:"#242B2E",color:"white"}}>
+        <CardContent>
+            <Typography variant='h6' sx={{letterSpacing:".25px"}}>Shop with Moksh</Typography>
+
+            <Typography variant='body2'>Congratulations </Typography>
+
+            <Typography variant='h5' sx={{my:3.1}}>420.6k </Typography>
+
+            <Button size='small' variant='contained'>View Sales</Button>
+
+            <TrignleImg src=''></TrignleImg>
+
+            <TrophyImg src='https://imgs.search.brave.com/chGgWC2H7JsLKtG9wP2gU2hee5nFW4xogJhS5TU3Olo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL25ld19nYWxs/ZXJ5LzcxLTcxMzc2/MF9nb2xkLWN1cC10/cm9waHktdHJhbnNw/YXJlbnQtYmFja2dy/b3VuZC10cm9waHkt/cG5nLnBuZw'/>
+
+        </CardContent>
+    </Card>
+  )
+}
+
+export default Achivement
